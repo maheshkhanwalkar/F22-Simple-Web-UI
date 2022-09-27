@@ -22,15 +22,7 @@ export class ColumbiaStudentServiceService {
     const theUrl = window.location.href;
     let result: string;
 
-    // This is some seriously bad code.
-    // If you do this on a job interview, you did not learn this in my class.
-    if (theUrl.includes('amazonaws')) {
-      /* This can change over time */
-      result = undefined;
-    }
-    else {
-      result = 'http://127.0.0.1:5011/api/students/';
-    }
+    result = 'http://127.0.0.1:5011/api/students/';
     return result;
   }
 
