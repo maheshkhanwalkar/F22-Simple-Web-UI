@@ -22,7 +22,7 @@ export class ColumbiaStudentServiceService {
     const theUrl = window.location.href;
     let result: string;
 
-    result = 'http://127.0.0.1:5011/api/students/';
+    result = new URL(theUrl).hostname + ':5011/api/students/';
     return result;
   }
 
